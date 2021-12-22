@@ -1,0 +1,71 @@
+.watch-card {
+  border: none !important;
+  border-radius: none !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.watch-card img {
+  max-width: 450px;
+  max-height: 450px;
+  object-fit: cover;
+}
+.watch-card .image-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+.watch-card:hover .image-hover {
+  opacity: 1;
+}
+
+.discount-text {
+  position: absolute;
+  z-index: 10;
+  top: 5%;
+  left: 5%;
+  color: rgb(31, 29, 29);
+  /* background-color: #cb9400; */
+  background-color: #FFDB99;
+  padding: 0.6rem 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.watch-card .card-body {
+  position: absolute;
+  bottom: 0;
+  background-image: linear-gradient(
+    to bottom,
+    #ffdb99c5,
+    #ffdb998c
+  );
+  color: rgb(27, 27, 27);
+  width: 100%;
+  text-align: center;
+  transform: translateY(200px);
+  transition: all 0.5s Ease;
+  opacity: 0;
+}
+
+.watch-card:hover .card-body {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.watch-card .title {
+  font-size: 22px;
+  font-weight: 700;
+}
+.watch-card .price {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.watch-card .price strike {
+  color: #242222e7;
+  font-size: 16px;
+}

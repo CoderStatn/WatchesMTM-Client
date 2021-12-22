@@ -1,0 +1,221 @@
+.booking-banner {
+  min-height: 15vh;
+  background-color: #FFDB99;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.booking-banner h3 {
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.booking-banner a {
+  color: #fff;
+}
+.booking-content {
+  margin: 3rem 6rem;
+}
+.booking-product {
+  display: flex;
+}
+
+.product-image-box {
+  flex: 0 0 40%;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-image-box img {
+  width: 100%;
+}
+.product-image-box .image-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+.product-image-box .image-hover:hover {
+  opacity: 1;
+}
+
+.product-details {
+  padding: 0 0 0 3rem;
+  flex: 1;
+}
+.product-details .total-reviews,
+.product-details .icon,
+.product-name,
+.product-price {
+  color: #FFDB99;
+}
+
+.product-details .total-reviews {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.product-name {
+  font-size: 42px;
+  font-weight: 700;
+}
+.product-price {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.product-details .description {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.6px;
+}
+
+.ratings .icon {
+  margin: 0;
+}
+.booking-bottom {
+  background-image: linear-gradient(
+      to right,
+      rgba(132, 202, 198, 0.85),
+      rgba(132, 202, 198, 0.85)
+    ),
+    url(../../images/others/booking-banner.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 6rem 1rem;
+}
+
+.discount {
+  font-size: 90px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+.booking-form {
+  flex: 0 0 60%;
+  padding: 0 8%;
+}
+
+.booking-form h3 {
+  font-weight: 300;
+  font-size: 62px;
+  color: #fff;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.booking-form form,
+.admin-form form {
+  display: block;
+  margin: 0 auto;
+}
+.booking-form input,
+.admin-form input {
+  display: block;
+  border: 1px solid #e7e7e7e7;
+  padding: 6px 12px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  font-size: 18px;
+  width: 100%;
+  color: #FFDB99;
+}
+.booking-form input:focus,
+.admin-form input:focus {
+  outline: 1px solid #e7e7e7e7;
+}
+
+.booking-form small,
+.admin-form small {
+  display: block;
+  margin-top: -6px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #cb9400;
+}
+.btn-book {
+  background-color: #cb9400;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 4px !important;
+  width: max-content !important;
+  padding: 0.4rem 1.2rem !important;
+}
+@media (max-width: 668px) {
+  .booking-banner {
+    min-height: 10vh;
+  }
+  .booking-banner h3 {
+    font-size: 12px;
+  }
+  .booking-content {
+    margin: 2rem 1rem 1rem;
+  }
+  .booking-product {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-image-box {
+    width: 100%;
+  }
+  .product-name {
+    margin-bottom: 0.6rem;
+  }
+
+  .product-details {
+    padding: 1rem 0.5rem;
+  }
+
+  .product-details .total-reviews {
+    font-size: 18px;
+  }
+
+  .product-details .description {
+    letter-spacing: 0;
+  }
+  .booking-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1rem;
+  }
+
+  .discount {
+    font-size: 60px;
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0 1.5rem;
+  }
+  .booking-form {
+    flex: 0 0 100%;
+    padding: 0;
+  }
+
+  .booking-form h3 {
+    display: none;
+  }
+
+  .booking-form form,
+  .admin-form form {
+    text-align: center;
+  }
+  .booking-form input,
+  .admin-form input {
+    display: inline-block;
+  }
+
+  .booking-form small,
+  .admin-form small {
+    text-align: left;
+  }
+}

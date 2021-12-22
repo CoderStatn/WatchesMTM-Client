@@ -1,0 +1,105 @@
+.admin {
+  display: flex;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+
+.admin > * {
+  padding: 0 3rem;
+}
+
+.admin h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* ------------------------------- ADMIN LIST ------------------------------- */
+.admin-list {
+  flex: 0 0 55%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 2rem;
+}
+
+.admin-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  background-color: rgba(60, 74, 73, 1);
+  color: #fff;
+  height: 50px;
+  padding: 0.8rem 1.4rem;
+  border-radius: 6px;
+}
+
+.admin-item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.admin-item > * {
+  display: block;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+/* ------------------------------- ADMIN FORM ------------------------------- */
+.admin-form {
+  flex: 1;
+}
+
+.admin-form small {
+  color: #FFDB99;
+}
+.btn-admin {
+  background-color: #FFDB99;
+  border: none !important;
+  color: #fff !important;
+  width: max-content !important;
+  border-radius: 4px !important;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              SHORT MEDIA QUERY                             */
+/* -------------------------------------------------------------------------- */
+@media (max-width: 668px) {
+  .admin {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+
+  .admin > * {
+    padding: 0;
+  }
+
+  .admin h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  /* ------------------------------- ADMIN LIST ------------------------------- */
+  .admin-list {
+    width: 100%;
+    margin: 0;
+  }
+
+  .admin-item {
+    height: 50px;
+    padding: 0.8rem 1.4rem;
+  }
+
+  .admin-item > * {
+    width: 100%;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+
+  /* ------------------------------- ADMIN FORM ------------------------------- */
+  .admin-form {
+    margin-top: 2rem;
+    width: 100%;
+  }
+}

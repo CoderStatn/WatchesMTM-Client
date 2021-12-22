@@ -1,0 +1,58 @@
+.our-collections,
+.brands {
+  margin: 2rem 6rem 2rem;
+}
+
+.brands {
+  padding: 0 0 2rem 0;
+}
+.reviews {
+  margin: 2rem 0;
+}
+
+.brands h1,
+.our-collections h1,
+.reviews {
+  color: #FFDB99;
+}
+
+.our-collections {
+  min-height: 80vh;
+}
+.spinner-box {
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.our-collections p,
+.brands p,
+.reviews p {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+@media (max-width: 668px) {
+  .our-collections,
+  .brands {
+    margin: 1.5rem 1rem 1rem;
+  }
+
+  .brands {
+    padding: 0 0 1rem 0;
+  }
+  .reviews {
+    margin: 0;
+  }
+
+  .our-collections p,
+  .brands p,
+  .reviews p {
+    font-size: 14px;
+  }
+
+  .sm-none {
+    display: none;
+  }
+}
